@@ -8,9 +8,9 @@ public class FizzBuzzRunner {
     private static final int RANGE_END_EXCLUSIVE = 1001;
 
     public static void main(String[] args) {
-        var fizzBuzzExecutor = new FizzBuzzExecutor();
+        FizzBuzzExecutor fizzBuzzExecutor = new FizzBuzzExecutor();
         IntStream.range(RANGE_START_INCLUSIVE, RANGE_END_EXCLUSIVE).forEach(number -> {
-            var result = fizzBuzzExecutor.execute(number);
+            String result = fizzBuzzExecutor.execute(number);
             System.out.println(result);
         });
     }
